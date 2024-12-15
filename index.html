@@ -37,7 +37,7 @@
 
     <header>
         <!-- This is a comment about the header section -->
-        <h1>Popular Cosmetic Brands</h1>
+        <h2>Popular Cosmetic Brands</h2>
         <dialog open>
             <h2>Welcome to Our Store!</h2>
             <p>Explore the latest in <mark>beauty</mark> and <mark>cosmetics</mark>.</p>
@@ -57,6 +57,7 @@
                 </li>
             </ul>
             <button class="close-button" onclick="this.parentNode.close()">Close</button>
+
         </dialog>
     </header>
     
@@ -80,7 +81,7 @@
             <address>
                 Contact us at: <a href="mailto:gradsandinterns@loreal.com">gradsandinterns@loreal.com</a>
             </address>
-            <h1>Listen to This Audio</h1>
+            <h2>Listen to This Audio</h2>
             <audio controls>
                 <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
@@ -114,6 +115,7 @@
             <colgroup>
                 <col style="background-color: #f9c7c7">
                 <col style="background-color: #c7f9c7">
+                <col style="background-color: #f0f0f0">
             </colgroup>
             <thead>
                 <tr>
@@ -129,16 +131,22 @@
                     <td>1994</td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td> </td>
                     <td>Lipstick in Ruby Woo</td>
                     <td>1999</td>
                 </tr>
                 <tr>
-                    <td></td>
+                    <td> </td>
                     <td>Prep + Prime Fix+</td>
                     <td>2012</td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">* All prices in USD</td>
+                    <td>Free shipping on orders over $50</td>
+                </tr>
+            </tfoot>
         </table>
     
         <label for="colors">Choose a color:</label>
@@ -169,7 +177,8 @@
     
     <footer>
         <p>© 2024 Beauty Brand. All rights reserved.</p>
-        <iframe src="https://www.example.com" title="Cosmetic Articles" width="300" height="200"></iframe>
+        <iframe src="https://www.example.com" title="Cosmetic Articles" style="border: none;" width="300" height="200"></iframe>
+
     </footer>
     
     <canvas id="brandsPopularity" width="400" height="400"></canvas>
