@@ -72,7 +72,7 @@
             <p><b>L'Oréal</b> is one of the largest cosmetic companies in the world, founded in France in 1909. L'Oréal invests heavily in scientific research and innovation, allowing it to continually refresh its product lines.</p>
             <figure>
                 <picture>
-                    <source media="(min-width: 650px)" srcset="https://skin.ru/storage/articles/7607/conversions/WmjfaWzjqziePoZiWT0urtg8EvDmqcdEPitsVHDI-content_front.jpg">
+
                     <img src="https://skin.ru/storage/articles/7607/conversions/WmjfaWzjqziePoZiWT0urtg8EvDmqcdEPitsVHDI-content_front.jpg" style="width: 35%; height: auto; margin-left: 30px;" alt="L'Oréal Store">
                 </picture>
                 <figcaption class="caption-margin">L'Oréal Store</figcaption>
@@ -124,6 +124,11 @@
                     <th>Year Established</th>
                 </tr>
             </thead>
+            <tfoot>
+            <tr>
+                <td colspan="3">* All prices in USD. Free shipping on orders over $50</td>
+            </tr>
+            </tfoot>
             <tbody>
                 <tr>
                     <td>MAC Cosmetics</td>
@@ -162,10 +167,17 @@
         <form>
             <fieldset>
                 <legend>Subscribe for Updates</legend>
+                <!-- Label for email -->
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="yourname@example.com" required>
-                <textarea placeholder="Your message here..."></textarea>
-                <select>
+
+                <!-- Label for textarea -->
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your message here..."></textarea>
+
+                <!-- Label for select -->
+                <label for="category">Select Category:</label>
+                <select id="category" name="category">
                     <optgroup label="Cosmetics">
                         <option value="skincare">Skincare</option>
                         <option value="makeup">Makeup</option>
@@ -207,13 +219,26 @@
 <!-- Navigation section - add after header -->
 <nav>
     <strong>Main Menu:</strong>
-    <menu>
-        <li><a href="#skincare">Skincare</a></li>
+    <ul>
+        <li><a href="#skincare">Skincare Products</a></li>
         <li><a href="#makeup">Makeup</a></li>
         <li><a href="#haircare">Haircare</a></li>
-    </menu>
+        </ul>
 </nav>
+    <section id="skincare">
+        <h2>Skincare Products</h2>
+        <p>Details about skincare products...</p>
+    </section>
 
+    <section id="makeup">
+        <h2>Makeup</h2>
+        <p>Details about makeup products...</p>
+    </section>
+
+    <section id="haircare">
+        <h2>Haircare</h2>
+        <p>Details about haircare products...</p>
+    </section>
 <!-- Product description section - add in main content -->
 <div class="product-description">
     <h3>New Arrival: Advanced Anti-Aging Serum</h3>
@@ -270,30 +295,19 @@ Key Ingredients:
 </div>
 
 <!-- Video tutorial -->
-<video width="320" height="240" controls>
-    <source src="makeup-tutorial.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+    <video width="320" height="240" controls>
+        <source src="https://example.com/videos/tutorial.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
-<iframe width="320" height="240" src="https://www.youtube.com/embed/yEjxz7EUZB4" frameborder="0" allowfullscreen></iframe>
+<iframe width="320" height="240" src="https://www.youtube.com/embed/yEjxz7EUZB4"  allowfullscreen></iframe>
 
-<!-- Template for product cards -->
-<template id="product-template">
-    <div class="product-card">
-        <i class="product-icon">🧴</i>
-        <strong class="product-name">Product Name</strong>
-        <span class="product-price">$29.99</span>
-    </div>
-</template>
 
-<tfoot>
-    <tr>
-        <td colspan="2">* All prices in USD</td>
-        <td>Free shipping on orders over $50</td>
-    </tr>
-</tfoot>
 
-<link rel="stylesheet" href="cosmetics-styles.css">
-    
+
+
+
+    <script src=""></script>
+
     </body>
     </html>
